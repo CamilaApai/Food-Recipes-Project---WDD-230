@@ -1,0 +1,149 @@
+/* General CSS */
+:root {
+  --secondary-color: #f3fde8;
+  --accent1-color: #a8df8e;
+  --heading-font: "Averia Serif Libre", Georgia, serif;
+  --paragraph-font: "Mukta Mahee", Helvetica, sans-serif;
+  --paragraph-size: 16px;
+  --base-padding: 10px;
+  --base-margin: var(--base-margin);
+  --border: 1px solid black;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+header,
+footer {
+  color: black;
+  background-color: var(--primary-color);
+}
+
+nav,
+main:not(h1),
+footer {
+  font-size: var(--paragraph-size);
+  font-family: var(--paragraph-font);
+}
+
+#recipe-image:hover {
+  box-shadow: 0 0 50px #333;
+}
+
+/*|| MAIN ||*/
+h1,
+h2 {
+  color: var(--accent1-color);
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p,
+main,
+footer {
+  font-size: 16px;
+}
+
+.search-container {
+  display: flex;
+  margin: 20px;
+}
+
+#searchInput {
+  padding: 5px;
+  margin: var(--base-margin);
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#searchButton {
+  padding: var(--base-padding);
+  background-color: #28869b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#search-results {
+  margin: 20px;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: var(--base-padding);
+  margin: var(--base-margin);
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.view-recipe {
+  background-color: #28869b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.view-recipe:hover {
+  background-color: #28869b;
+}
+
+.recipe-card {
+  padding: var(--base-padding);
+  margin-bottom: 20px;
+}
+
+#recipe-ingredients li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#recipe-steps,
+#recipe-ingredients,
+#recipe-steps,
+#recipe-nutrition {
+  text-align: left;
+}
+
+/*|| FOOTER ||*/
+footer {
+  padding: var(--base-padding);
+}
+
+footer hr {
+  border: 0px;
+  width: 100%;
+  background-color: var(--accent1-color);
+  height: 1px;
+}
+
+@media only screen and (min-width: 60em) {
+  /*|| HEADER Grid||*/
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p,
+  main,
+  footer {
+    font-size: 18px;
+  }
+}
